@@ -1,4 +1,4 @@
-#PLPA 6820 - Exam #1 - Questions 4 & 5
+#PLPA 6820 - Exam #1 - 
 #Kayla Sullins 
 
 ######Question #4: 

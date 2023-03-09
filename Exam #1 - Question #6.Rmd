@@ -1,5 +1,5 @@
 ---
-title: 'Exam #1'
+title: 'Exam #1' 
 author: "Kayla Sullins"
 date: "2023-03-09"
 output: 
@@ -7,16 +7,16 @@ output:
     keep_md: yes
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(include = TRUE)
 library(knitr)
 library(ggplot2)
 library(markdown)
 ```
 
 
-```{r setup, include=TRUE}
-######Question #4: 
+```{Layering, include = TRUE}
+######Question #4: #
 #Layering: 
 ggplot(mycotoxin, aes(x = Treatment, y = DON, fill = Cultivar)) +
   geom_boxplot() +
@@ -24,7 +24,7 @@ ggplot(mycotoxin, aes(x = Treatment, y = DON, fill = Cultivar)) +
 
 
 ```
-```{r setup, include=FALSE}
+```{Scales echo=TRUE}
 ####Question #4: 
 #Scales: 
 ggplot(mycotoxin, aes(x= Treatment, y= DON, fill= Cultivar)) + 
@@ -35,7 +35,7 @@ ggplot(mycotoxin, aes(x= Treatment, y= DON, fill= Cultivar)) +
   scale_fill_manual(values=c("#56B4E9", "#CC79A7"))
 
 ```
-```{r setup, include=TRUE}
+```{Themes echo=TRUE}
 #Question #4: 
 #Themes: 
 ggplot(mycotoxin, aes(x = Treatment, y = DON, fill = Cultivar)) + 
@@ -43,7 +43,7 @@ ggplot(mycotoxin, aes(x = Treatment, y = DON, fill = Cultivar)) +
   theme_dark()
 
 ```
-```{r setup, include=TRUE}
+```{Facets echo=TRUE}
 #Question #4: 
 #Facets: 
 ggplot(mycotoxin, aes(x= Treatment, y= DON, fill= Cultivar)) +
@@ -51,7 +51,7 @@ ggplot(mycotoxin, aes(x= Treatment, y= DON, fill= Cultivar)) +
   facet_wrap(~Treatment*Cultivar,scales = "free")
 
 ```
-```{r setup, include=TRUE}
+```{Question 5, echo=TRUE}
 ######Question #5:   
 library(datasets); data("ToothGrowth"); str(ToothGrowth)
 data1 <- subset(ToothGrowth, supp == "VC")
