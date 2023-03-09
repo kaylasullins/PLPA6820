@@ -26,6 +26,6 @@ ggplot(mycotoxin, aes(x= Treatment, y= DON, fill= Cultivar)) +
 ######Question #5:   
 library(datasets); data("ToothGrowth"); str(ToothGrowth)
 data1 <- subset(ToothGrowth, supp == "VC")
-data2 <- subset.data.frame(ToothGrowth, supp == "VC" & dose == "0.5")
-
+data2 <- subset(ToothGrowth, supp == "VC" & dose == "0.5")
+data3 <- subset(ToothGrowth, select = c(len), supp == "VC" & dose == "0.5")
 
